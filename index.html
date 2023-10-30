@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nabla&display=swap" rel="stylesheet">
+    <style>
+      
+ @media (min-width: 768px) and (max-width: 992px) {
+  .col-md-4 {
+    width: 50%;
+  }
+}
+    </style>
+    <style>
+      .container .header{
+        position: sticky;
+    top: 0; 
+    background-color: white;
+    z-index: 100; /
+      }
+      .col-md-4{
+        margin-top: 1rem;
+      }
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card{
+        height: 100%;
+      }
+      .item img {
+        height: 500px;
+      }
+    </style>
+    <title>Viagens</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav navbar ">
+        <h2 style=" display: flex ;  text-align: center; justify-content: center; color: coral;" class="h2">Viagem certa</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+              <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#carrosel">Aventuras<span class="sr-only"></span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#grid">Pacotes</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+    <section  id="carrosel">
+        <div class="container">
+        <div id="carouselExample" class="carousel slide carousel-fade"  data-bs-ride="carousel" data-bs-interval="3000" >
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="item-0">
+                    <div class="item">      <img src="./images/atacama.webp" class="d-block w-100 img-fluid default-height" alt="..."></div>
+                </div>
+                <div class="carousel-item " id="item-1">
+                    <div class="item">      <img src="./images/patagonia.jpeg" class="d-block w-100 img-fluid default-height" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item " id="item3">
+                    <div class="item">      <img src="./images/islandia.jpeg" class="d-block w-100 img-fluid default-height" alt="...">
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+        </div>
+    </div>
+    </section>
+    <section id="grid">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem1.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Trekking pela américa do sul</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus, nobis sint cumque totam rem quod nam quae, ipsam amet deserunt delectus perspiciatis iure esse eveniet odio deleniti fugit ea.</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 col-sm-6">
+            <div class="card">  
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem2.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Relaxe nas maldivas</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ut ullam! Quos a, illo aliquid magnam, eligendi doloremque eveniet debitis quae repellendus minima illum minus laboriosam, eum blanditiis commodi cum!.</p>
+                </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem3.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Conheça a Europa</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit fuga at consectetur eum, minima beatae veniam? Quia recusandae perferendis distinctio, sed doloribus quas animi quasi asperiores, commodi amet quibusdam.</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>          
+            </div>
+            <div class="col-md-4 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem4.webp" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Conheça o sudeste asiático</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus blanditiis dicta quod. Ipsa at consequatur, laudantium repellendus, dolor laborum id, laboriosam et sapiente rerum nihil suscipit hic quas similique quis.</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>          
+            </div>
+              <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem5.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Vivencie o safari na Africa</h5>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos alias, dolorem assumenda vero consectetur ex. Numquam possimus atque veritatis fuga nobis, blanditiis nihil ipsam sequi voluptate aliquid adipisci, ad quisquam!</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>              
+            </div>
+              <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem6.jpeg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Se divirta na neve</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti necessitatibus modi nisi temporibus similique deleniti! In perferendis tempore commodi est velit totam quasi, labore laudantium sapiente, dignissimos voluptatum facilis.</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>            </div>
+              <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" class="d-block  img-fluid " src="./images/viagem7.webp" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Pacotes para a América do Norte</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti necessitatibus modi nisi temporibus similique deleniti! In perferendis tempore commodi est velit totam quasi, labore laudantium sapiente, dignissimos voluptatum facilis.</p>
+              </div>
+              <div class="card-footer">
+                <strong><p class="price"> R$6.900,00</p></strong>
+                <a href="#" class="btn btn-primary text-light bg-dark w-100">Clique aqui e confira</a>
+              </div>
+            </div>            </div>
+            // add novos pacotes
+        </div>
+    </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
